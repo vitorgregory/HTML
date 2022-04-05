@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Strong', sans-serif;
+  src: url(../font/strong-regular.ttf);
+}
+.icon-logo{
+  width: 25%;
+}
+body{
+  font-family: 'Strong', sans-serif;
+  margin: 0;
+  background-image: url(../TelaLoading.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+header h1{
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+.slidecontainer {
+  width: 100%;
+  margin-left: 10%;
+  font-size: 1em;
+  margin-top: 2em;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 60%;
+  height: 0.7em;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+header h1{
+  font-size: 2em;
+}
+.set-instrument{
+  display: block;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 1em 0 2em 10%;
+}
+.set-instrument:link{
+  color: white;
+  text-decoration: none;
+}
+.set-instrument:visited{
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+}
+.btn-REC{
+  background-color: #d60404;
+  color: white;
+  padding: 1em 2em;
+  margin-left: 9%;
+  border-radius: 10%;
+}
+.btn-shift{
+  background-color: rgba(255, 255, 255, 0.20);
+  color: white;
+  padding: 1em 2em;
+  margin-left: 5%;
+  border-radius: 10%;
+}
+.btn-shift:active{
+  background-color: #204618;
+}
+.btn-div{
+  width: 100%;
+  max-height: auto;
+}
+/*.btn-main-link{
+  background-color: #04AA6D;
+}*/
+.btn-main{
+  display: inline-block;
+  color:rgba(255, 255, 255, 0);
+  background-color: white;
+  padding: 15%;
+  margin: 10% 0 0 10%;
+  border-radius: 5%;
+}
+.btn-main:active{
+  background-color: #04AA6D;
+}
+.btn-main::selection{
+  color: rgba(0, 0, 0, 0);
+}
+/*.btn-main:hover{
+  background-color: aqua;
+}
+*/

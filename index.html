@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- doctype informa o agente de usuário a versão do html que deve ser renderizada -->
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="">
+  <meta name= "content" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Final Módulo 5</title>
+  <link rel="manifest" href="manifest.json">
+  <!--<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/icomoon/style.css">-->
+  <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <header>
+    <h1><span class="icon-logo"></span>LaserSound</h1>
+  </header>
+  <nav>
+    <a class="set-instrument" href="">Set the instrument</a>
+    <a class="btn-REC" href="">REC</a>
+    <a class="btn-shift" href="">shift</a>
+    <div class="slidecontainer">
+      <p>Volume: <span id="demo-volume"></span></p>
+      <input type="range" min="1" max="100" value="50" class="slider" id="volume">
+    </div>
+    <div class="slidecontainer">
+      <p>Delay: <span id="demo-delay"></span></p>
+      <input type="range" min="1" max="100" value="50" class="slider" id="delay">
+    </div>
+  </nav>
+  <main>
+    <div class="btn-div">
+      <a class="btn-main-link" href=""><div class="btn-main">b1</div></a>
+      <a class="btn-main-link" href=""><div class="btn-main">b2</div></a>
+      <a class="btn-main-link" href=""><div class="btn-main">b3</div></a>
+      <a class="btn-main-link" href=""><div class="btn-main">b4</div></a>
+    </div>
+  </main>
+  <script>
+    var slider = document.getElementById("volume");
+    var output = document.getElementById("demo-volume");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+  </script>
+  <script>
+    var slider = document.getElementById("delay");
+    var output = document.getElementById("demo-delay");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+    }
+  </script>
+</body>
